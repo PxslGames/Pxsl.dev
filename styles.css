@@ -1,0 +1,144 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: #00ff00;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #00ff00;
+    animation: fadeIn 1s ease-in;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 0 0 20px #00ff00;
+}
+
+h2 {
+    color: #00ff00;
+    border-bottom: 1px solid #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+#projects {
+    background-color: rgba(0, 100, 0, 0.3); /* Dark green background */
+    border: 1px solid #00ff00; /* Bright green border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00; /* Glowing effect */
+    margin-top: 20px; /* Space above the section */
+}
+
+#projects h3 {
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00; /* Glow for the subheading */
+}
+
+#projects ul {
+    padding-left: 20px; /* Indent the list */
+}
+
+#projects li {
+    margin-bottom: 20px;
+    padding: 10px; /* Added padding around each list item */
+    border: 1px solid transparent; /* Initial transparent border for smooth transition */
+    border-radius: 5px; /* Rounded corners for the list item */
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; /* Include border-color in transition */
+}
+
+#projects li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; /* Brighter glow on hover */
+    border-color: #00ff00; /* Change border color to green on hover */
+}
+
+#projects a {
+    color: #00ff00;
+    text-decoration: none;
+    transition: text-shadow 0.3s ease;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; /* Constant glow */
+}
+
+#projects a:hover {
+    text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; /* Brighter glow on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #00ff00;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 1s ease-in;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Glowing link styles */
+a {
+    color: #00ff00;
+    text-decoration: none;
+    transition: text-shadow 0.3s ease;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; /* Constant glow */
+}
+
+a:hover {
+    text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; /* Brighter glow on hover */
+}
+
+/* Expertise box styles */
+.expertise-box {
+    background-color: rgba(0, 255, 0, 0.1); /* Light green background */
+    border: 1px solid #00ff00; /* Green border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    margin-top: 20px; /* Space above the box */
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00; /* Glowing effect */
+}
+
+.expertise-box h3 {
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00; /* Glow for the heading */
+}
+
+.expertise-box ul {
+    padding-left: 20px; /* Indent the list */
+}
