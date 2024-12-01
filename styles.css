@@ -1,8 +1,9 @@
+/* Universal Styles */
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: black;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #0d0d0d; /* Darker black for better contrast */
     color: #00ff00;
-    line-height: 1.6;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -11,24 +12,28 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    border-bottom: 1px solid #00ff00;
+    border-bottom: 2px solid #00ff00;
     animation: fadeIn 1s ease-in;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3rem;
     margin: 0;
-    text-shadow: 0 0 20px #00ff00;
+    text-shadow: 0 0 25px #00ff00, 0 0 50px #00ff00;
 }
 
 h2 {
+    font-size: 2rem;
     color: #00ff00;
     border-bottom: 1px solid #00ff00;
-    text-shadow: 0 0 10px #00ff00;
+    text-shadow: 0 0 15px #00ff00;
+    padding-bottom: 5px;
 }
 
 main {
     padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto; /* Center content */
 }
 
 section {
@@ -42,67 +47,102 @@ ul {
 
 li {
     margin-bottom: 20px;
-    text-shadow: 0 0 10px #00ff00;
+    text-shadow: 0 0 15px #00ff00;
+    line-height: 1.6;
 }
 
+/* Project Section Styles */
 #projects {
-    background-color: rgba(0, 100, 0, 0.3); /* Dark green background */
-    border: 1px solid #00ff00; /* Bright green border */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Padding around the content */
-    box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00; /* Glowing effect */
-    margin-top: 20px; /* Space above the section */
+    background-color: rgba(0, 255, 0, 0.05); /* Softer green for readability */
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 25px #00ff00, 0 0 50px #00ff00;
+    margin-top: 20px;
 }
 
 #projects h3 {
+    font-size: 1.5rem;
     color: #00ff00;
-    text-shadow: 0 0 10px #00ff00; /* Glow for the subheading */
+    text-shadow: 0 0 15px #00ff00;
 }
 
 #projects ul {
-    padding-left: 20px; /* Indent the list */
+    padding-left: 20px;
 }
 
 #projects li {
-    margin-bottom: 20px;
-    padding: 10px; /* Added padding around each list item */
-    border: 1px solid transparent; /* Initial transparent border for smooth transition */
-    border-radius: 5px; /* Rounded corners for the list item */
-    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; /* Include border-color in transition */
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: rgba(0, 100, 0, 0.2); /* Subtle highlight */
+    border: 1px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 #projects li:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; /* Brighter glow on hover */
-    border-color: #00ff00; /* Change border color to green on hover */
+    transform: translateY(-5px);
+    background-color: rgba(0, 255, 0, 0.1); /* Highlight on hover */
+    box-shadow: 0 0 25px #00ff00, 0 0 50px #00ff00;
+    border-color: #00ff00;
 }
 
 #projects a {
     color: #00ff00;
     text-decoration: none;
     transition: text-shadow 0.3s ease;
-    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; /* Constant glow */
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
 }
 
 #projects a:hover {
-    text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; /* Brighter glow on hover */
+    text-shadow: 0 0 30px #00ff00, 0 0 40px #00ff00;
+}
+
+/* Expertise Box Styles */
+.expertise-box {
+    background-color: rgba(0, 255, 0, 0.1);
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00;
+}
+
+.expertise-box h3 {
+    font-size: 1.8rem;
+    color: #00ff00;
+    text-shadow: 0 0 15px #00ff00;
+}
+
+.expertise-box ul {
+    padding-left: 20px;
+    line-height: 1.8;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    border-top: 1px solid #00ff00;
+    border-top: 2px solid #00ff00;
     position: relative;
     bottom: 0;
     width: 100%;
     animation: fadeIn 1s ease-in;
+    font-size: 1rem;
 }
 
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
+/* Glowing Link Styles */
+a {
+    color: #00ff00;
+    text-decoration: none;
+    transition: text-shadow 0.3s ease;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
 }
 
+a:hover {
+    text-shadow: 0 0 30px #00ff00, 0 0 40px #00ff00;
+}
+
+/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -112,33 +152,18 @@ footer {
     }
 }
 
-/* Glowing link styles */
-a {
-    color: #00ff00;
-    text-decoration: none;
-    transition: text-shadow 0.3s ease;
-    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; /* Constant glow */
-}
-
-a:hover {
-    text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; /* Brighter glow on hover */
-}
-
-/* Expertise box styles */
-.expertise-box {
-    background-color: rgba(0, 255, 0, 0.1); /* Light green background */
-    border: 1px solid #00ff00; /* Green border */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Padding around the content */
-    margin-top: 20px; /* Space above the box */
-    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00; /* Glowing effect */
-}
-
-.expertise-box h3 {
-    color: #00ff00;
-    text-shadow: 0 0 10px #00ff00; /* Glow for the heading */
-}
-
-.expertise-box ul {
-    padding-left: 20px; /* Indent the list */
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    #projects, .expertise-box {
+        padding: 15px;
+    }
+    li {
+        font-size: 0.9rem;
+    }
 }
